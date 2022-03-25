@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none;
+}
+
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --tilte-color: #212122;
+    --color-text: #000000;
+    --btn-hover: #ffffff;
+    --label-after: #111111;
+    --color-headings: #7a8bda;
+    --color-social: #000000;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--color-text);
+}
+
+.header-text h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+#text-name::after{
+    content: '|';
+    margin-left: 3px;
+    font-size: 1.8rem;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.header-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.header  #profile{
+    width: 10%;
+    border-radius: 50% 50%;
+    border: 0.1rem solid #A883FF;
+}
+
+.header #profile:hover{
+    transform: scale(1.1);
+}
+
+.navl{
+    display: flex;
+    justify-content: center;
+}
+
+.navl ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.navl li{
+    display: flex;
+}
+
+#fa-sun{
+    font-size: 0.9rem;
+    bottom: -6px;
+    position: relative;
+    left: 3px;
+}
+
+#fa-moon{
+    padding-left: 6px;
+    position: relative;
+    left: -3px;
+    font-size: 0.9rem;
+    bottom: -7px;
+}
+
+li a{
+    color: var(--color-text);
+}
+
+li a:hover{
+    transform: scale(1.2);
+    border-bottom: 2px solid #5a5087;
+}
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: #5a5087;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: #A883FF;
+    border-radius: 90px;
+    transition: 0.2s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+#Sobre{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 1rem;
+}
+
+#sobre p{
+    word-break: break-all;
+}
+
+
+#Experiências{
+    border-top: 1px solid #A883FF;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#Projetos{
+    border-top: 1px solid #A883FF;
+    padding-top: 1rem;
+}
+
+#Projetos h3{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    text-align: center;
+    height: 50vh;
+    padding: 12px;
+    margin-left: 15%;
+}
+
+.cards a{
+    color: rgb(160, 109, 226);
+}
+
+.cards a:hover{
+    color: rgb(153, 64, 255);
+    transform: scale(1.1);
+}
+
+.card-1{
+    margin: 0px 20px;
+}
+
+.card-1, span, button{
+    display:block;
+}
+
+.card-1 #photo-node{
+    width: 12vw;
+}
+
+.card-2, a{
+    display:block;
+}
+
+.card-2 #photo-restaurant{
+    width: 12vw;
+}
+
+.card-3{
+    margin-left: 0.5rem;
+}
+
+.card-3 #photo-random{
+    width: 12vw;
+    height: 27vh;
+}
+
+.card-4{
+    margin-left: 0.5rem ;
+}
+
+/* CONHECIMENTOS */
+
+#conhecimentos{
+    border-top: 1px solid #5a5087;
+    border-bottom: 1px solid #5a5087;
+}
+
+
+#conhecimentos h4{
+    text-align: center;
+}
+
+.skill{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills .skill i{
+    font-size: 4rem;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+    width: 100%;
+}
+
+.footer span{
+    display: block;
+    padding: 5px 20px;
+    text-align: start;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.social i{
+    color: var(--color-social);
+    font-size: 1.5rem;
+}
+
+.social i:hover{
+    transform: scale(1.2);
+}
+
+/* @media (max-width: 500px) {
+    
+} */

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Style CSS -->
+
+    <link rel="stylesheet" href="main.css">
+    <!-- FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+
+    <!-- CDN FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FAVICON  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-photo">
+            <img src="assets/myphoto.jpeg" alt="Uma foto minha sorrindo" id="profile">
+        </div>
+        <div class="header-text">
+            <h1 id="text-name">Wesley Aquino Dias<h1>
+            </div>
+            <nav class="navl">
+                <ul>
+                    <li>
+                        <i id='fa-sun' class="fa-solid fa-sun"></i>
+                        <div class="toggle">
+                            <input id="switch" type="checkbox" name="theme">
+                            <label for="switch">toggle</label>
+                        </div>
+                        <i id='fa-moon'class="fa-solid fa-moon"></i>
+                </li>
+                <li>
+                    <a href="#Sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Experiências</a>
+                </li>
+                <li>
+                    <a href="#">Projetos</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section id="Sobre" class="section-sobre">
+                <p> Meu nome é Wesley Aquino Dias, Tenho 22 anos é moro em Brasília,
+                    <br>Sou estudande do Curso ciência da computação.<br>
+                    Sou apaixonado por tecnologia, desde novo eu já gostava de jogar videogame e de computador. <br>Meu foco é me tornar um dev fullstack.
+                </p>
+            </section>
+
+            <section id="Experiências" class="section-experiencias">
+                <h2>Experiências</h2>
+                <br>
+                <b>Suporte técnico</b>
+               <p>CTFinancy Software Jurídico · Estágio</p>
+               <p> dez de 2020 - dez de 2021 · 1 ano 1 mês <br>
+                Brasília, Distrito Federal, Brasil</p>
+            </section>
+
+            <section id="Projetos" class="section-projetos">
+                <h3>Projetos</h3>
+                <div class="cards">
+                    <div class="card-1">
+                        <span>Node API</span>
+                        <img src="/assets/nodeApi.jpg" alt="" id="photo-node">
+                        <span>API rest feita com node</span>
+                        <a href="https://github.com/aaquinowesley/PogRestaurant">Link do repositório </a>
+                    </div>
+                    <div class="card-2">
+                        <span>PogRestaurant</span>
+                        <img src="/assets/pog.jpg" alt="" id="photo-restaurant">
+                        <span>Ainda está sendo desenvolvido</span>
+                       <a href="#"> Em Breve</a>
+                    </div>
+                    <div class="card-3">
+                        <span>RandomPaper</span> 
+                        <img src="/assets/RandomPaper.png" alt="" id="photo-random">
+                        <span>gera imagens aleatórias <br>para serem usadas <br>como papel de parede</span>
+                        <a href="https://github.com/aaquinowesley/RandomPaper">Link do repositório </a>
+                    </div>
+                    <div class="card-4">
+                        <span>Gerenciador-Py</span>
+                        <img src="assets/py.png" alt="">
+                        <span>Mostra</span>
+                        <a href="https://github.com/aaquinowesley/gerenciador-py">Link do repositório </a>
+                    </div>
+                </div> 
+            </section>
+            <section id="conhecimentos" class="section-conhecimentos">
+                <h4>Conhecimentos</h4>
+                <div class="skills">
+                    <ul class="skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>Html5</span>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>Css3</span>
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>NodeJS</span>
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                        <i class="fa-brands fa-figma"></i>
+                        <span>Figma</span>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </header>
+    <footer class="footer">
+        <div class="contato">
+            <span>Contato:</span>
+            <span>(61) 99987-4604 <i class="fa-brands fa-whatsapp"></i></span>
+            <span>Email:</span>
+            <span>Wesleyaquinobsb@gmail.com <i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <div class="social">
+            <ul>
+                    <a href="https://www.linkedin.com/in/wesleyaquino/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aaquinowesley" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+                    <a href="https://www.instagram.com/aaquinowesley/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            </ul>
+            <p>By Wesley Aquino 2022</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
