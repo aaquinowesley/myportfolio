@@ -25,8 +25,11 @@
 
 </head>
 <body>
-    <header class="header">
-        <div class="header-photo">
+    <div id="wpp-fixed">
+        <a href="https://api.whatsapp.com/send?phone=5561999874604" id="whatsapp"><i class="fa-brands fa-whatsapp fa-shake" target="_blank" id="wpp-i"></i></a>
+    </div>
+    <header class="header">     
+        <div class="header-photo2">
             <img src="assets/myphoto.jpeg" alt="Uma foto minha sorrindo" id="profile">
         </div>
         <div class="header-text">
@@ -46,15 +49,22 @@
                     <a href="#Sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Experiências</a>
+                    <a href="#Experiências">Experiências</a>
                 </li>
                 <li>
-                    <a href="#">Projetos</a>
+                    <a href="#Projetos">Projetos</a>
+                </li>
+                <li>
+                    <a href="#Conhecimentos">Conhecimentos</a>
                 </li>
             </ul>
         </nav>
         <main>
+            <section id="inicial">
+                <img src="/assets/profile.svg" alt="" id="profile-img">
+            </section>
             <section id="Sobre" class="section-sobre">
+                <h2>Sobre</h2>
                 <p> Meu nome é Wesley Aquino Dias, Tenho 22 anos é moro em Brasília,
                     <br>Sou estudande do Curso ciência da computação.<br>
                     Sou apaixonado por tecnologia, desde novo eu já gostava de jogar videogame e de computador. <br>Meu foco é me tornar um dev fullstack.
@@ -82,7 +92,7 @@
                     <div class="card-2">
                         <span>PogRestaurant</span>
                         <img src="/assets/pog.jpg" alt="" id="photo-restaurant">
-                        <span>Ainda está sendo desenvolvido</span>
+                        <span>Ainda está <br> sendo desenvolvido</span>
                        <a href="#"> Em Breve</a>
                     </div>
                     <div class="card-3">
@@ -94,27 +104,27 @@
                     <div class="card-4">
                         <span>Gerenciador-Py</span>
                         <img src="assets/py.png" alt="">
-                        <span>Mostra</span>
+                        <span>Gerencia algumas funcionalidades<br> pelo terminal</span>
                         <a href="https://github.com/aaquinowesley/gerenciador-py">Link do repositório </a>
                     </div>
                 </div> 
             </section>
-            <section id="conhecimentos" class="section-conhecimentos">
+            <section id="Conhecimentos" class="section-conhecimentos">
                 <h4>Conhecimentos</h4>
                 <div class="skills">
                     <ul class="skill">
                         <i class="fa-brands fa-html5"></i>
-                        <span>Html5</span>
+                        <span id="skill-text">Html5</span>
                         <i class="fa-brands fa-css3-alt"></i>
-                        <span>Css3</span>
+                        <span id="skill-text">Css3</span>
                         <i class="fa-brands fa-js"></i>
-                        <span>JavaScript</span>
+                        <span id="skill-text">JavaScript</span>
                         <i class="fa-brands fa-node-js"></i>
-                        <span>NodeJS</span>
+                        <span id="skill-text">NodeJS</span>
                         <i class="fa-brands fa-python"></i>
-                        <span>Python</span>
+                        <span id="skill-text">Python</span>
                         <i class="fa-brands fa-figma"></i>
-                        <span>Figma</span>
+                        <span id="skill-text">Figma</span>
                     </ul>
                 </div>
             </section>
@@ -136,7 +146,6 @@
             <p>By Wesley Aquino 2022</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

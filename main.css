@@ -25,6 +25,23 @@ body{
     color: var(--color-text);
 }
 
+/* Classe */
+#wpp-fixed{
+    position: relative;
+    width: 20px;
+    z-index: 2;
+}
+
+/* a */
+#whatsapp > #wpp-i{
+    position: fixed;
+    left: 96%;
+    bottom: 4%;
+    color:#00ff37;
+    z-index: 1;
+    font-size: 30px;
+}
+
 .header-text h1{
     text-align: center;
     font-weight: 300;
@@ -47,13 +64,14 @@ body{
     }
 }
 
-.header-photo{
+.header-photo2{
     display: flex;
+    margin-top: 8px;
     justify-content: center;
 }
 
 .header  #profile{
-    width: 10%;
+    width: 8%;
     border-radius: 50% 50%;
     border: 0.1rem solid #A883FF;
 }
@@ -80,7 +98,7 @@ body{
     font-size: 0.9rem;
     bottom: -6px;
     position: relative;
-    left: 3px;
+    left: 1px;
 }
 
 #fa-moon{
@@ -143,16 +161,29 @@ label:active:after {
     width: 45px;
 }
 
+#inicial{
+    width: 35%;
+    margin-top: 5px;
+}
+
+#profile-img{
+    position: relative;
+    max-width: 800px;
+    width: 95%;
+    left: 360px;    
+}
+
 #Sobre{
+    border-top: 1px solid #5a5087 ;
     text-align: center;
     margin-top: 20px;
     padding-bottom: 1rem;
 }
 
+/*
 #sobre p{
-    word-break: break-all;
-}
-
+    
+}*/
 
 #Experiências{
     border-top: 1px solid #A883FF;
@@ -176,6 +207,8 @@ label:active:after {
     height: 50vh;
     padding: 12px;
     margin-left: 15%;
+    font-size: 0.8rem;
+    gap: 2rem;
 }
 
 .cards a{
@@ -222,29 +255,38 @@ label:active:after {
 
 /* CONHECIMENTOS */
 
-#conhecimentos{
+#Conhecimentos{
     border-top: 1px solid #5a5087;
     border-bottom: 1px solid #5a5087;
 }
 
 
-#conhecimentos h4{
+#Conhecimentos h4{
     text-align: center;
+    margin: 20px 0px;
 }
 
 .skill{
     display: flex;
-    justify-items: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+#skill-text{
+    font-size: 0.9rem;
 }
 
 .skills .skill i{
     font-size: 4rem;
 }
 
+
 /* FOOTER */
 
 .footer{
+    border-top: 1px solid #5a5087;
     text-align: center;
     width: 100%;
 }
@@ -270,6 +312,6 @@ label:active:after {
     transform: scale(1.2);
 }
 
-/* @media (max-width: 500px) {
-    
-} */
+/*@media (max-width: 500px) {
+   
+}*/
