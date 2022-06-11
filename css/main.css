@@ -1,11 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style:none;
-}
-
 :root{
     --bg-color: rgb(255, 255, 255);
     --tilte-color: #212122;
@@ -312,6 +304,9 @@ label:active:after {
     transform: scale(1.2);
 }
 
-/*@media (max-width: 500px) {
-   
-}*/
+@media (max-width: 600px) {
+   #inicial > #profile-img{
+      background-color: #00ff37;
+      max-width: 10%;
+   }
+}
