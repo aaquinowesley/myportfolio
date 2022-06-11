@@ -184,6 +184,14 @@ label:active:after {
     padding-bottom: 1rem;
 }
 
+#Experiências a{
+    color: rgb(149, 0, 255);
+}
+
+#Experiências a:hover{
+    color: lightgreen;
+}
+
 #Projetos{
     border-top: 1px solid #A883FF;
     padding-top: 1rem;
