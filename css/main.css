@@ -6,12 +6,12 @@
 
 :root{
     --bg-color: rgb(255, 255, 255);
-    --tilte-color: #212122;
-    --color-text: #000000;
+    --tilte-color: #ffffff;
+    --color-text: #ffffff;
     --btn-hover: #ffffff;
     --label-after: #111111;
     --color-headings: #7a8bda;
-    --color-social: #000000;
+    --color-social: #ffffff;
 }
 
 body{
@@ -20,6 +20,8 @@ body{
     font-size: 62.5%;
     background: url(https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80) center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     scroll-behavior: smooth;
 }
 
@@ -34,18 +36,13 @@ a{
     align-items: flex-end;
 }
 
-#btn-translate{
-    margin-top: 1rem;
-    border: none;
-    background: none;
-}
-
 #btn-translate img{
     width: 6%;
 }
 
 .container-fluid{
     width: 100%;
+    padding: 1.5rem;
     text-align: center;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.679);
@@ -91,14 +88,13 @@ a{
 }
 
 .header-photo2{
-    padding: 5rem;
     margin-right: 1rem;
     width: 100%;
 }
 
 .header  #profile{
     margin-top: 1rem;
-    width: 8%;
+    width: 18%;
     border-radius: 50% 50%;
     border: 0.2rem solid #A883FF;
 }
@@ -119,7 +115,7 @@ a{
     display: flex;
     width: 100%;
     gap: 2rem;
-    justify-content: center
+    justify-content: center;
 }
 
 .navl li{
@@ -130,25 +126,6 @@ a{
    font-size: 1.1rem;
 }
 
-#darkmode{
-    display: inline-flex;
-    justify-content: center;
-}
-
-#fa-sun{
-    font-size: 0.9rem;
-    bottom: -6px;
-    position: relative;
-    left: -3px;
-}
-
-#fa-moon{
-    padding-left: 6px;
-    position: relative;
-    left: -3px;
-    font-size: 0.9rem;
-    bottom: -7px;
-}
 
 li a{
     color: var(--color-text);
@@ -157,49 +134,6 @@ li a{
 li a:hover{
     transform: scale(1.2);
     border-bottom: 2px solid #5a5087;
-}
-
-
-input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-
-label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 52px;
-    height: 27px;
-    background: #5a5087;
-    float: right;
-    border-radius: 100px;
-    position: relative;
-}
-
-label::after{
-    content: '';
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 20px;
-    height: 20px;
-    background-color: #A883FF;
-    border-radius: 90px;
-    transition: 0.2s;
-}
-
-input:checked + label {
-    background-color: var(--color-headings);
-}
-
-input:checked + label::after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-}
-
-label:active:after {
-    width: 45px;
 }
 
 main{
@@ -229,9 +163,10 @@ main{
     margin-left: 1rem;
 }
 
-/* #sobre > p{
-    
-} */
+.title-session{
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+}
 
 #Experiências{
     border-top: 1px solid #A883FF;
@@ -241,7 +176,7 @@ main{
 }
 
 #Experiências a{
-    color: rgb(149, 0, 255);
+    color: #A883FF
 }
 
 #Experiências a:hover{
@@ -258,11 +193,10 @@ main{
     width: 100%;
     display: flex;
     gap: 1rem;
-    cursor: pointer;
 }
 
 .card:hover{
-    transform: scale(1.1);
+    animation:shadow-pop-bl .3s cubic-bezier(.47,0.000,.745,.715) both
 }
 
 .card{
@@ -270,12 +204,37 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
-    background-color: #000000;
+    background-color: #2f2739;
+    border-radius: 0.5rem;
     width: 100%;
 }
 
 .card .img-card img{
-    max-width: 50%;
+    width: 100%;
+}
+
+.btn-cards{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-cards button{
+    appearance: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #A883FF;
+}
+
+.card .btn-cards button a{
+    color: #000000;
+}
+
+.btn-cards button:hover{
+    transform: scale(1.1);
 }
 
 .title-card{
@@ -310,19 +269,30 @@ main{
     font-size: 3rem;
 }
 
+.skill .col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.col i:hover{
+    transform: scale(1.1);
+    color: gold;
+}
 
 /* FOOTER */
 
 .footer{
     border-top: 1px solid #5a5087;
-    white-space: nowrap;
     width: 100%;
 }
 
+.footer .contato{
+    max-width: 100%;
+}
+
 .footer .contato span{
-    display: block;
-    padding: 5px 20px;
-    text-align: start;
+    margin-top: 0.8rem;
     font-size: 1.2rem;
 }
 
@@ -348,7 +318,6 @@ main{
 }
 
 .text-final{
-    height: 7vh;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -370,5 +339,61 @@ main{
 
 .container-wpp a i:hover{
     filter: brightness(1);
-    background: url('./assets/eua.png');
+}
+
+@keyframes shadow-pop-bl{0%{box-shadow:0 0 #5a5087,0 0 #5a5087,0 0 #5a5087,0 0 #5a5087,0 0 #5a5087,0 0 #5a5087,0 0 #5a5087,0 0 #5a5087;transform:translateX(0) translateY(0)}100%{box-shadow:-1px 1px #5a5087,-2px 2px #5a5087,-3px 3px #5a5087,-4px 4px #5a5087,-5px 5px #5a5087,-6px 6px #5a5087,-7px 7px #5a5087,-8px 8px #5a5087;transform:translateX(8px) translateY(-8px)}}
+
+@media (max-width: 600px)
+{
+  .container-fluid
+   {
+    padding: 5rem;
+   }
+   /* .section-projetos{
+    width: auto;
+   } */
+   .cards{
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   }
+   .skil{
+    flex-direction: row;
+   }
+}
+
+
+@media (max-width: 300px)
+{
+  .container-fluid
+   {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text{
+    width: 100%;
+}
+
+.navl ul{
+    margin-top: 1rem;
+    width: 20%;
+    flex-wrap: wrap;
+   }
+
+   #profile-img{
+    display: none;
+   }
+   .footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+   /* .container-wpp{
+    display: none;
+   } */
 }

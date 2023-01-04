@@ -13,7 +13,6 @@
 
     <!-- Style CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- FONT -->
@@ -33,26 +32,15 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="translate">
-            <button id="btn-translate"><img src="./assets/eua.png" alt=""></button>
-        </div>
             <header class="header">     
                 <div class="header-photo2">
-                    <img src="./assets/myphoto.jpeg" class="img-fluid" alt="Uma foto minha sorrindo" id="profile">
+                    <img src="../assets/myphoto.jpeg" class="img-fluid" alt="Uma foto minha sorrindo" id="profile">
                 </div>
                     <div class="header-text">
                         <h1 id="text-name">Wesley Aquino Dias<h1>
                     </div>
                     <nav class="navl">
                         <ul>
-                            <li id="darkmode">
-                                <i id='fa-sun' class="fa-solid fa-sun"></i>
-                                <div class="toggle">
-                                    <input id="switch" type="checkbox" name="theme">
-                                    <label for="switch">toggle</label>
-                                </div>
-                                <i id='fa-moon'class="fa-solid fa-moon"></i>
-                        </li>
                         <li>
                             <a href="#Sobre">Sobre</a>
                         </li>
@@ -69,7 +57,7 @@
                 </nav>
                 <main>
                     <section id="inicial">
-                            <img src="./assets/profile.svg" alt="" class="img-fluid" id="profile-img">
+                            <img src="../assets/profile.svg" alt="" class="img-fluid" id="profile-img">
                     </section>
                     <section id="Sobre" class="section-sobre" translate="yes">
                         <h2>Sobre</h2>
@@ -77,9 +65,9 @@
                             <br> Sou apaixonado por tecnologia,<br>Meu foco agora é me tornar um dev fullstack.
                         </p>
                     </section>
-        
+
                     <section id="Experiências" class="section-experiencias">
-                        <h2>Experiências</h2>
+                            <h2>Experiências</h2>
                         <br>
                         <b>Suporte técnico</b>
                        <p>CTFinancy Software Jurídico · Estágio</p>
@@ -91,85 +79,144 @@
                         <p>junho de 2022 - Estou atualmente<br>
                         Brasília, Distrito Federal</p>
                         <br>
-                        <a href="./cv.pdf" download>Baixar curriculo</a>
+                        <a href="../cv.pdf" download>Baixar curriculo</a>
                         <i class="fa-solid fa-file-pdf"></i>
                         </p>
                     </section>
         
                     <section id="Projetos" class="section-projetos">
-                        <h3>Projetos</h3>
+                        <div class="title-session">
+                            <h3>Projetos</h3>
+                        </div>
+
                         <div class="cards">
                             <div class="card">
                                 <div class="img-card">
-                                    <img src="https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="">
+                                    <h2>Gestaurante</h2>
+                                    <img src="../assets/gesta.JPG" alt="">
                                     <div class="title-card">
-                                        <p>Sistema para fazer a gestão de resturante</p>
+                                        <p>Sistema para gestão de resturantes, desenvolvido no 7° semestre do curso de ciência da computação, foram usadas muitas tecnologias dentre elas Html, Css, Js, Typescript, Angular e prisma</p>
+                                    </div>
+                                    <div class="btn-cards">
+                                        <button><a href="https://github.com/aaquinowesley/gestaurante" target="_blank">Repositório</a></button>
+                                        <button disabled> Saber Mais</button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div class="img-card">
-                                    <img src="https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="">
+                                    <h2>Landing Page <br> God of War</h2>
+                                    <img src="../assets/landingpage_god.jfif" alt="">
                                     <div class="title-card">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi rerum natus, quis beatae, minima nisi cumque laudantium ex velit atque cum inventore qui tempore, aspernatur non. Repellat, in fugit.
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae adipisci nemo animi, natus corporis voluptas sapiente temporibus minus hic ipsum dicta debitis porro commodi odit, dolore incidunt impedit fugiat.</p>
+                                        <p>landing page que criei para divulgar o jogo god of war, feita apenas com HTML5, CSS3 e JS</p>
+                                    </div>
+                                    <div class="btn-cards">  
+                                        <button><a href="https://github.com/aaquinowesley/landingpage_God_of_War" target="_blank">Repositório</a></button>
+                                        <button><a href="https://aaquinowesley.github.io/landingpage_God_of_War/" target="_blank">Saber Mais</a></button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div class="img-card">
+                                    <h2>Ecommerce</h2>
                                     <img src="https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="">
                                     <div class="title-card">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi rerum natus, quis beatae, minima nisi cumque laudantium ex velit atque cum inventore qui tempore, aspernatur non. Repellat, in fugit.
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae adipisci nemo animi, natus corporis voluptas sapiente temporibus minus hic ipsum dicta debitis porro commodi odit, dolore incidunt impedit fugiat.</p>
+                                        <p>Ecommerce criado com HTML, CSS e JS</p>
+                                    </div>
+                                    <div class="btn-cards">
+                                        <button><a href="#">Saber Mais</a></button>
+                                        <button><a href="#">Link</a></button>
                                     </div>
                                 </div>
                             </div>
+
                             <div class="card">
                                 <div class="img-card">
-                                    <img src="https://images.unsplash.com/photo-1597589827703-f4b68eafa0ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="">
+                                    <h2>API Rest</h2>
+                                    <img src="../assets/rest-api.jpg" alt="">
                                     <div class="title-card">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi rerum natus, quis beatae, minima nisi cumque laudantium ex velit atque cum inventore qui tempore, aspernatur non. Repellat, in fugit.
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae adipisci nemo animi, natus corporis voluptas sapiente temporibus minus hic ipsum dicta debitis porro commodi odit, dolore incidunt impedit fugiat.</p>
+                                        <p>Api criada em nodeJs</p>
+                                    </div>
+                                    <div class="btn-cards">
+                                        <button><a href="#">Saber Mais</a></button>
+                                        <button><a href="#">Link</a></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </section>
+
                     <section id="Conhecimentos" class="section-conhecimentos">
-                        <h4>Conhecimentos</h4>
+                        <div class="title-session">
+                            <h4>Conhecimentos</h4>
+                        </div>
                         <div class="skills">
                             <ul class="skill">
-                                <i class="fa-brands fa-html5 img-fluid"></i>
-                                <span id="skill-text">Html5</span>
-                                <i class="fa-brands fa-css3-alt img-fluid"></i>
-                                <span id="skill-text">Css3</span>
-                                <i class="fa-brands fa-js img-fluid"></i>
-                                <span id="skill-text">JavaScript</span>
-                                <i class="fa-brands fa-node-js img-fluid"></i>
-                                <span id="skill-text">NodeJS</span>
-                                <i class="fa-brands fa-python img-fluid"></i>
-                                <span id="skill-text">Python</span>
-                                <i class="fa-brands fa-figma img-fluid"></i>
-                                <span id="skill-text">Figma</span>
-                                <i class="fa-brands fa-angular img-fluid"></i>
-                                <span id="skill-text">Angular</span>
-                                <i class="fa-brands fa-docker img-fluid"></i>
-                                <span id="skill-text">Docker</span>
-                                <i class="fa-brands fa-github img-fluid"></i>
-                                <span id="skill-text img-fluid">Github</span>
+                                <div class="col">
+                                    <i class="fa-brands fa-html5 img-fluid"></i>
+                                    <span id="skill-text">Html5</span>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-brands fa-css3-alt img-fluid"></i>
+                                    <span id="skill-text">Css3</span>
+                                </div>
+                                <div class="col">
+                                    <i class="fa-brands fa-js img-fluid"></i>
+                                    <span id="skill-text">JavaScript</span>
+                                </div>
+
+                                <div class="col">        
+                                    <i class="fa-brands fa-node-js img-fluid"></i>
+                                    <span id="skill-text">NodeJS</span>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-brands fa-python img-fluid"></i>
+                                    <span id="skill-text">Python</span>
+                                    
+                                </div>
+
+                                <div class="col">                  
+                                    <i class="fa-brands fa-figma img-fluid"></i>
+                                    <span id="skill-text">Figma</span>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-brands fa-angular img-fluid"></i>
+                                    <span id="skill-text">Angular</span>
+                                </div>
+
+                                <div class="col">                    
+                                    <i class="fa-brands fa-docker img-fluid"></i>
+                                    <span id="skill-text">Docker</span>
+                                </div>
+
+                                <div class="col">                
+                                    <i class="fa-brands fa-github img-fluid"></i>
+                                    <span id="skill-text img-fluid">Github</span>
+                                </div>
                             </ul>
                         </div>
                     </section>
                 </main>
             </header>
+
             <footer class="footer">
                 <div class="contato">
-                    <span>Contato:</span>
-                    <span>(61) 99987-4604 <i class="fa-brands fa-whatsapp"></i></span>
-                    <span>Email:</span>
-                    <span>wesleyaquinojob@gmail.com <i class="fa-solid fa-envelope"></i></span>
+                    <div class="info">
+                        <span>Contato:</span>
+                        <span>(61) 99987-4604 <i class="fa-brands fa-whatsapp"></i> </span>
+                    </div>
+                    <div class="info">
+                        <span>Email:</span>
+                        <span>wesleyaquinojob@gmail.com <i class="fa-solid fa-envelope"></i></span>
+                    </div>
                 </div>
+
                 <div class="social">
                     <ul>
                             <a href="https://www.linkedin.com/in/wesleyaquino/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -187,6 +234,5 @@
         </div>
 
     <script src="script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 </body>
 </html>
